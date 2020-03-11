@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="Home" class="w3-button w3-bar-item">Home</a>
+  <a href="#Info" class="w3-button w3-bar-item">Info</a>
+  <a href="#Typs" class="w3-button w3-bar-item">Types</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="images/Dino_1.jpg"
+  style="width:55%">
+  <img class="mySlides" src="images/Dino_2.jpg"
+  style="width:55%">
+  <img class="mySlides" src="images/Dino_3.jpg"
+  style="width:55%">
+  <img class="mySlides" src="images/Dino_4.jpg"
+  style="width:55%">
+</section>
+
+<!-- Dinosaurs  -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">DINO HOMEPAGE</h2>
+  <p class="w3-opacity"><i>Introduction To Dinosaurs</i></p>
+  <p class="w3-justify"> Dinosaurs first appeared between 247 and 240 million years ago. They ruled the Earth for about 175 million years until an extinction event 65.5 million years ago wiped out all of them, expect for the avian dinosaurs. Scientists don't agree entirely on what happened, but the extinction likely was a double or triple whammy involving an asteroid impact, choking chemicals from erupting volcanoes, climate change and possibly other factors.</p>
+</section>
+
+<!-- Types of Dinosaurs  -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Tyrannosaurus Rex </p>
+    <img src="images/t_rex.jpg" alt="T-REX" style="width:55%">
+    <p>Tyrannosaurus rex is possibly the most well known dinosaur due to its huge size, ferocious nature and regular appearances in popular media. Thanks to a number of well preserved fossils, the T-Rex has been studied in detail by paleontologists all around the world..</p>
+  </article>
+  <article class="w3-third">
+    <p>Velociraptor</p>
+    <img src="images/Ve_.jpg" alt="Random Name" style="width:55%">
+    <p>Although it featured some nasty looking claws, the Velociraptor was actually a lot smaller than it was portrayed in the movie Jurassic Park, more the size of a turkey than a human. Read on to find out where their fossils have been found, which NBA team is named after them and more..</p>
+  </article>
+  <article class="w3-third">
+    <p>Apatosaurus (Brontosaurus)</p>
+    <img src="images/apato_.jpg" alt="Random Name" style="width:55%">
+    <p> Also known as the Brontosaurus, this giant dinosaur is one of the largest animals to have walked on Earth, reaching an amazing 23m (75ft) in length and 23 tons in weight..</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
